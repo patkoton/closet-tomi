@@ -1,7 +1,14 @@
+import "./index.css";
+import Top from "./components/Top";
+import Head from "./components/Head";
+import Body from "./components/Body";
+
 function App() {
   return (
     <div className="App">
-      <p>Order receipt from Closet_Tomi</p>
+      <Top />
+      <Head />
+      <Body />
     </div>
   );
 }
