@@ -63,6 +63,10 @@ code {
   cursor: pointer;
 }
 
+.bsp {
+  display: none;
+}
+
 .clz {
   fill: rgba(0, 0, 0, 0.7);
 }
@@ -320,4 +324,26 @@ th, td {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .order {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .ai {
+    display: none;
+  }
+
+  .bsp {
+    display: block;
+  }
 }
