@@ -4,6 +4,7 @@ import { BsStarFill } from 'react-icons/bs'
 import { useState } from "react";
 
 const Top = () => {
+    //Starred Messages
     const [cls, setCls] = useState("clz");
   return (
     <div className='top'>

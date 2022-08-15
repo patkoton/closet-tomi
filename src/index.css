@@ -254,6 +254,29 @@ th, td {
   color: rgba(0, 0, 0, 0.85);
 }
 
+.stpq {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.85);
+  margin-left: 18px;
+  text-align: right;
+
+}
+
+.stpd {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.85);
+  margin-left: 35px;
+  text-align: right;
+
+}
+
+/* Footer Component */
 .purple {
   width: 270px;
   height: 80px;
@@ -270,15 +293,18 @@ th, td {
   text-align: center;
   letter-spacing: 0.01em;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
+/* Button Component */
 .reply-box {
   width: 90px;
   height: 25px;
-  left: 32px;
-  top: 737.88px;
   border: 1px solid rgba(219, 24, 128, 0.49);
   border-radius: 10px;
+  display: flex;
+  padding-top: 4px;
+  padding-left: 15px;
 }
 
 .reply-text {
@@ -287,5 +313,11 @@ th, td {
   line-height: 16px;
   letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.8);
+  padding-left: 10px;
 }
 
+.button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}

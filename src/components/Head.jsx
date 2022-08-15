@@ -1,8 +1,10 @@
 import React from 'react'
 import '../index.css';
 import { IoReturnUpBack, IoEllipsisVertical } from 'react-icons/io5'
+ import { useNavigate } from 'react-router-dom';
 
 const Head = () => {
+     const navigate = useNavigate();
   return (
     <div className='head'>
         <div className='closet'>
@@ -18,7 +20,7 @@ const Head = () => {
                 </div>
 
                 <div className='io5'>
-                    <IoReturnUpBack className='irup' type='button' />
+                    <IoReturnUpBack className='irup' type='button' onClick={() => navigate(-1)} />
                     <IoEllipsisVertical className='iev' type='button' />
                 </div>
             </div>
