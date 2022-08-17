@@ -1,6 +1,7 @@
 import React from 'react'
 import '../index.css';
-import Logo from '../images/LOGO(1).png';
+import Logo from '../images/LOGO.Mobile.png';
+import LoGo from '../images/LOGO.Desktop.png';
 import data from '../data'
 
 const Body = () => {
@@ -13,8 +14,9 @@ const Body = () => {
         <p className='may'>May 25, 2022</p>
       </div>
       <img src={Logo} alt="" className='logo' />
+      <img src={LoGo} alt="" className='loGo' />
 
-      <div>
+      <div className='fabconf'>
         <p className='fabrics'>Your fabrics are almost there</p>
         <div>
           <button className='confp'><b>Confirm Pickup</b></button>
@@ -36,7 +38,7 @@ const Body = () => {
               <tbody className='td'>
                 <tr>
                   <td>{item.type}</td>
-                  <td className='iq'>{item.quantity}</td>
+                  <td className='iq'>{item.quantity}yards</td>
                   <td>{item.price}</td>
                 </tr>
               </tbody>
@@ -56,8 +58,8 @@ const Body = () => {
         <hr style={{marginBottom: "20px"}} />
 
         <div className='st'>
-        <p className='stp' style={{marginLeft: "-12px"}}>Total(<small>plus VAT</small>)  </p>
-        <p className='stp' style={{marginBottom: "10px"}}>{sumQ}</p>
+        <p className='stpt'>Total(<small>plus VAT</small>)</p>
+        <p className='stpta'>{sumQ}</p>
         </div>
     </div>
   )

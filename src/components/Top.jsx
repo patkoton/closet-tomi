@@ -15,7 +15,7 @@ const Top = ({ cls, setCls }) => {
         <BsStarFill className={`ai ${cls}`} type="button" onClick={() => setCls((cls) => (cls === "clz" ? "rod" : "clz"))} />
 
         <div className='bsp'>
-          <BsPrinter type='button' style={{cursor: "pointer"}} onClick={() => window.print()} />
+          <BsPrinter type='button' style={{cursor: "pointer", marginLeft: "-130px"}} onClick={() => window.print()} />
           
           <FiExternalLink style={{marginLeft: "50px", cursor: "pointer"}} type='button' />
         </div>

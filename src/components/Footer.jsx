@@ -9,6 +9,11 @@ const Footer = () => {
               <Link to="" className='uns'>Unsubscribe</Link> | <Link to="" className='uns'>Update your profile</Link> | <br />
               15 - 18, Vics Street, Dees Estate, VI, Lagos
             </p>
+
+          <p className='unsd'>
+              <Link to="" className='unsd'>Unsubscribe</Link> | <Link to="" className='unsd'>Update your profile</Link> |
+              15 - 18, Vics Street, Dees Estate, VI, Lagos
+            </p>
         </div>
   )
 }
