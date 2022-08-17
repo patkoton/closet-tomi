@@ -29,7 +29,6 @@ code {
 .top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .ordin {
@@ -71,6 +70,10 @@ code {
   fill: rgba(0, 0, 0, 0.7);
 }
 
+.ai2 {
+  display: none;
+}
+
 .rod {
   fill: rgb(241, 190, 60);
 }
@@ -103,6 +106,7 @@ code {
 
 .closet-address {
   display: flex;
+  align-items: center;
 }
 
 .closet-text {
@@ -121,12 +125,22 @@ code {
   margin-top: 2px;
 }
 
+.closet-timed, .address {
+  display: none;
+}
+
 .closet-me {
   font-weight: 300;
   font-size: 7px;
   line-height: 9px;
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.9);
+  margin-left: 1px;
+  display: flex;
+}
+
+.io {
+  display: none;
 }
 
 .irup, .iev {
@@ -333,10 +347,24 @@ th, td {
     justify-content: center;
   }
 
+  /* Top Component */
   .order {
-    font-weight: 400;
     font-size: 28px;
     line-height: 33px;
+    margin: 0px 50px;
+  }
+
+  .inbox {
+    width: 70px;
+    height: 20px;
+    background: rgba(217, 217, 217, 0.75);
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.85);
+    margin-left: -30px;
+    padding-top: 2px;
   }
 
   .ai {
@@ -345,5 +373,79 @@ th, td {
 
   .bsp {
     display: block;
+  }
+
+  /* Head Component */
+  .ellipse {
+    width: 60px;
+    height: 60px;
+    background: rgba(217, 217, 217, 0.75);
+  }
+
+  .closet-att {
+    display: block;
+    margin-left: 10px;
+    margin-right: 200px;
+  }
+
+  .closet-text {
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.75); 
+  }
+
+  .closet-time{
+    display: none;
+  }
+
+  .address {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+
+  .closet-timed {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.75);
+    margin-right: 30px;
+  }
+
+  .closet-me {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  .io {
+    display: block;
+    margin-top: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+  }
+
+  .irup {
+    margin-left: 15px;
+    margin-right: 40px;
+  }
+
+  .io5h {
+    display: block;
+    padding-right: 20px;
+    margin-top: 2px;
+  }
+
+  .ai2 {
+    display: inline-block;
+    margin-right: 40px;
   }
 }

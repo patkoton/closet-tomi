@@ -1,11 +1,10 @@
 import React from 'react'
 import "../index.css";
 import { BsStarFill, BsPrinter } from 'react-icons/bs'
-import { useState } from "react";
+import { FiExternalLink } from 'react-icons/fi'
 
-const Top = () => {
+const Top = ({ cls, setCls }) => {
     //Starred Messages
-    const [cls, setCls] = useState("clz");
   return (
     <div className='top'>
         <div className="ordin">
@@ -13,12 +12,12 @@ const Top = () => {
             <div className="inbox">inbox</div>
         </div>
 
-        <div className="ai">
-            <BsStarFill className={cls} type="button" onClick={() => setCls((cls) => (cls === "clz" ? "rod" : "clz"))} />
-        </div>
+        <BsStarFill className={`ai ${cls}`} type="button" onClick={() => setCls((cls) => (cls === "clz" ? "rod" : "clz"))} />
 
         <div className='bsp'>
-          <BsPrinter />
+          <BsPrinter type='button' style={{cursor: "pointer"}} onClick={() => window.print()} />
+          
+          <FiExternalLink style={{marginLeft: "50px", cursor: "pointer"}} type='button' />
         </div>
     </div>
   )
