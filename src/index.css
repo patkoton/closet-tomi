@@ -56,7 +56,7 @@ code {
   letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 0.85);
   text-align: center;
-  padding-top: 0.5px;
+  padding-top: 1px;
 }
 
 .ai {
@@ -71,10 +71,6 @@ code {
   fill: rgba(0, 0, 0, 0.7);
 }
 
-.ai2 {
-  display: none;
-}
-
 .rod {
   fill: rgb(241, 190, 60);
 }
@@ -82,27 +78,15 @@ code {
 /* Head Component */
 .head {
   margin-top: 20px;
+}
+
+.closet1 {
   display: flex;
+  justify-content: space-between;
 }
 
-.closet {
-  display: flex;
-}
-
-.ellipse {
-  width: 29px;
-  height: 29px;
-  background: #D9D9D9;
-  border-radius: 100px;
-}
-
-.closet-dt {
-  display: flex;
-  margin-top: 5px;
-}
-
-.closet-att {
-  margin-left: 5px;
+.closet2 {
+  display: none;
 }
 
 .closet-address {
@@ -110,24 +94,19 @@ code {
   align-items: center;
 }
 
+.ellipse {
+  width: 29px;
+  height: 29px;
+  background: #D9D9D9;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
 .closet-text {
   font-weight: 400;
   font-size: 10px;
   line-height: 11px;
   color: rgba(0, 0, 0, 0.9); 
-}
-
-.closet-time {
-  font-weight: 300;
-  font-size: 6px;
-  line-height: 7px;
-  color: rgba(0, 0, 0, 0.75);
-  margin-left: 5px;
-  margin-top: 2px;
-}
-
-.closet-timed, .address {
-  display: none;
 }
 
 .closet-me {
@@ -140,8 +119,13 @@ code {
   display: flex;
 }
 
-.io {
-  display: none;
+.closet-time {
+  font-weight: 300;
+  font-size: 6px;
+  line-height: 7px;
+  color: rgba(0, 0, 0, 0.75);
+  margin-left: 5px;
+  margin-top: -7px;
 }
 
 .irup, .iev {
@@ -149,7 +133,6 @@ code {
 }
 
 .irup {
-  margin-left: 119px;
   margin-right: 20px;
 }
 
@@ -161,6 +144,11 @@ code {
   background-color: rgba(245, 245, 245, 0.51);
   border-radius: 1px;
   padding: 20px 15px;
+}
+
+.ord-may {
+  display: flex;
+  justify-content: space-between;
 }
 
 .order-no {
@@ -177,10 +165,6 @@ code {
   color: rgba(0, 0, 0, 0.85)
 }
 
-.ord-may {
-  display: flex;
-  justify-content: space-between;
-}
 
 .logo {
   margin-left: 80px;
@@ -330,6 +314,13 @@ th, td {
 }
 
 /* Button Component */
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
 .reply-box {
   width: 90px;
   height: 25px;
@@ -349,20 +340,22 @@ th, td {
   padding-left: 10px;
 }
 
-.button {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
 
+
+/* DESKTOP VIEW */
 @media (min-width: 992px) {
+
+  .App {
+    padding: 0px 0px;
+  }
+
   body{
     width: 100%;
-    display: flex;
-    justify-content: center;
+    margin-top: 40px;
   }
 
   /* Top Component */
+
   .order {
     font-size: 28px;
     line-height: 33px;
@@ -391,54 +384,41 @@ th, td {
   }
 
   /* Head Component */
-  .ellipse {
+  .closet1 {
+    display: none;
+  }
+
+  .closet2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .block1 {
+    display: flex;
+  }
+
+  .ellipseD {
     width: 60px;
     height: 60px;
     background: rgba(217, 217, 217, 0.75);
+    border-radius: 100px;
+    margin: 0px 10px;
   }
 
-  .closet-att {
-    display: block;
-    margin-left: 10px;
-    margin-right: 200px;
-  }
-
-  .closet-text {
+  .closet-textD {
+    font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     color: rgba(0, 0, 0, 0.75); 
   }
 
-  .closet-time{
-    display: none;
-  }
-
-  .address {
-    display: block;
+  .closet-meD {
     font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: rgba(0, 0, 0, 0.75);
-    margin-top: 2px;
-    margin-left: 5px;
-  }
-
-  .closet-timed {
-    display: inline-block;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: rgba(0, 0, 0, 0.75);
-    margin-right: 30px;
-  }
-
-  .closet-me {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0.03em;
     color: rgba(0, 0, 0, 0.75);
+    display: flex;
   }
 
   .io {
@@ -448,28 +428,52 @@ th, td {
     cursor: pointer;
   }
 
-  .irup {
+  .addressD {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+
+  .closet-timeD {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.75);
+    margin-right: 30px;
+  }
+
+  .irupD, .ievD {
+    cursor: pointer;
+  }
+
+  .irupD {
     margin-left: 15px;
     margin-right: 40px;
   }
 
-  .io5h {
-    display: block;
-    padding-right: 20px;
-    margin-top: 2px;
-  }
 
-  .ai2 {
+  .aiD {
     display: inline-block;
     margin-right: 40px;
   }
 
   /* Body Component */
+  .body-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .body {
-    width: 700px;
-    height: 600px;
+    width: 900px;
+    height: 650px;
     background: rgba(245, 245, 245, 0.51);
-    margin: 0px 80px;
   }
 
   .order-no {
@@ -570,8 +574,9 @@ th, td {
   .purple {
     width: 100%;
     text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0px;
   }
 
   .uns {

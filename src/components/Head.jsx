@@ -9,31 +9,38 @@ const Head = ({ cls, setCls }) => {
      const navigate = useNavigate();
   return (
     <div className='head'>
-        <div className='closet'>
-            <div className='ellipse'></div>
-            <div className='closet-dt'>
-                <div className='closet-att'>
-                    <div className='closet-address'>
-                        <p className='closet-text'>Closet_tomi</p>
-                        <p className='closet-time'>12:00 (3 hours ago)</p>
-                        <p className='address'> closettomi@mail.com </p>
-                    </div>
+        <div className='closet1'>
+            <div className='closet-address'>
+                <div className='ellipse'></div>
+                <p className='closet-text'>Closet_tomi <br /> <span className='closet-me'>to me</span> </p>
+                <p className='closet-time'>12:00 (3 hours ago)</p>
+            </div>
+            
+            <div className=''>
+                <IoReturnUpBack className='irup' type='button' onClick={() => navigate(-1)} />
 
-                    <p className='closet-me'>to me <IoIosArrowDown className='io' type='button' /> </p>
-                </div>
-
-                <div className='io5h'>
-                    <p className='closet-timed'>12:00 (3 hours ago)</p>
-
-                    <IoReturnUpBack className='irup' type='button' onClick={() => navigate(-1)} />
-
-                    <BsStarFill className={`ai2 ${cls}`} type="button" onClick={() => setCls((cls) => (cls === "clz" ? "rod" : "clz"))} />
-
-                    <IoEllipsisVertical className='iev' type='button' />
-                </div>
+                <IoEllipsisVertical className='iev' type='button' />
             </div>
         </div>
         
+        <div className='closet2'>
+            <div className='block1'>
+                <div className='ellipseD'></div>
+                <p className='closet-textD'>Closet_tomi <br /> <span className='closet-meD'>to me <IoIosArrowDown className='io' type='button' /></span></p>
+                <p className='addressD'> closettomi@mail.com </p>
+            </div>
+
+            <div className='block2'>
+                <p className='closet-timeD'>12:00 (3 hours ago)</p>
+
+                <IoReturnUpBack className='irupD' type='button' onClick={() => navigate(-1)} />
+
+                <BsStarFill className={`aiD ${cls}`} type="button" onClick={() => setCls((cls) => (cls === "clz" ? "rod" : "clz"))} />
+
+                <IoEllipsisVertical className='ievD' type='button' />
+            </div>
+        </div>
+
     </div>
   )
 }
