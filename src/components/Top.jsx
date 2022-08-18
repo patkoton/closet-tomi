@@ -17,7 +17,7 @@ const Top = ({ cls, setCls }) => {
         <div className='bsp'>
           <BsPrinter type='button' style={{cursor: "pointer"}} onClick={() => window.print()} />
           
-          <FiExternalLink style={{marginLeft: "50px", cursor: "pointer"}} type='button' />
+          <FiExternalLink style={{marginLeft: "50px", marginRight: "20px", cursor: "pointer"}} type='button' />
         </div>
     </div>
   )
