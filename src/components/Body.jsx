@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import '../index.css';
 import Logo from '../images/LOGO.Mobile.png';
 import LoGo from '../images/LOGO.Desktop.png';
 import data from '../data'
 
-const Body = () => {
+const Body = forwardRef((props, ref) => {
   const sumQ = data.map(item => item.price).reduce((acc, item) => item + acc);
   
   return (
-    <div className='body-container'>
+    <div className='body-container' ref={ref}>
       <div className='body'>
         <div className='ord-may'>
           <p className='order-no'>Order no: 12645</p>
@@ -65,6 +65,6 @@ const Body = () => {
       </div>
     </div>
   )
-}
+})
 
 export default Body
