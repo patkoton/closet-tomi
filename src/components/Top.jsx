@@ -3,6 +3,7 @@ import "../index.css";
 import { BsStarFill, BsPrinter } from 'react-icons/bs'
 import { FiExternalLink } from 'react-icons/fi'
 
+
 const Top = ({ cls, setCls }) => {
     //Starred Messages
   return (
@@ -15,6 +16,7 @@ const Top = ({ cls, setCls }) => {
         <BsStarFill className={`ai ${cls}`} type="button" onClick={() => setCls((cls) => (cls === "clz" ? "rod" : "clz"))} />
 
         <div className='bsp'>
+
           <BsPrinter type='button' style={{cursor: "pointer"}} onClick={() => window.print()} />
           
           <FiExternalLink style={{marginLeft: "50px", marginRight: "20px", cursor: "pointer"}} type='button' />
