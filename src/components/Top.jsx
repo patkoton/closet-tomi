@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "../index.css";
 import { BsStarFill, BsPrinter } from 'react-icons/bs'
 import { FiExternalLink } from 'react-icons/fi'
@@ -6,8 +6,8 @@ import ReactToPrint, { PrintContextConsumer } from "react-to-print";
 import Body from './Body';
 
 
-const Top = ({ cls, setCls, ref }) => {
-  // const ref = useRef();
+const Top = ({ cls, setCls }) => {
+   const ref = useRef();
     //Starred Messages
   return (
     <div className='top'>
